@@ -1,0 +1,208 @@
+ main, body {
+     background-color: #fafafa;
+    /*the above line sets the background to a slightly off white contrasting white nav etc*/
+     font-size: 16px;
+    /*Ensures the default fontsize is 16 to base em mersurements off */
+}
+ html, body, main, p {
+     margin: 0px;
+     padding: 0px;
+     font-family: 'Niramit', sans-serif;
+    /* 'Niramit' is the font im using for most text downloaded from google fonts , 'sans-serif' is a default fallback font for a scenario where said font cannot be located */
+}
+ header {
+     color: white;
+    /*Sets the font colour for the header to White */
+     background: linear-gradient(133deg, rgba(101, 74, 213, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /*Gives the header a gradient background that goes from Dark blue to light blue at a 133 degree angle */
+     padding: 50px;
+}
+ h1 {
+     font-family: 'Amatic SC', cursive;
+     font-size: 3em;
+}
+ nav {
+     margin: 0;
+     text-align: center;
+     background: linear-gradient(133deg, rgba(101, 74, 213, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /* The background is the same gradient seen in the header */
+     box-shadow: 0px 9px 36px 2px rgba(0, 0, 0, 0.17);
+    /*Light boxshadow gives effect of depth */
+}
+ ul {
+     padding: 0;
+     margin: 0;
+     border-bottom: 3px solid white;
+}
+ li {
+     display: inline;
+    /*Displays elements on same line as opposed to default html block structure*/
+     list-style-type: none;
+    /*removes point from items*/
+     Padding: 0 2em 0 2em;
+    /*em is a flexible unit in css that allow sizes to be scaled from an original default (often 16px)*/
+     font-size: 1.1em;
+}
+ li a {
+     text-decoration: none;
+    /* removes underline*/
+     color: rgba(255, 255, 255, 0.7) 
+    /* light grey helps distinguish active vs none active link */
+}
+ li a:hover {
+     color: #ffff66;
+    /*Yellow font colour */
+     font-weight: 600;
+    /* font made bolder when hovering */
+}
+ .current {
+    /*This class refers to the current page the user is on, allowing it to be differenciated making the site more accessable and easier to understand */
+     color: white;
+     font-weight: 600;
+}
+ a:hover{
+     font-weight: 600;
+}
+ h2 {
+     padding:2% 2%;
+     margin: 0;
+     font-family: 'Pacifico', cursive;
+     color: #333;
+}
+ main {
+     margin:35px auto;
+    /* margin between header and footer top bottom auto centers to middle describe better */
+     width: 75%;
+     line-height: 1.5em;
+     overflow: auto;
+    /*contains content */
+}
+ article {
+     width: 64%;
+     height: auto;
+}
+ article p{
+     padding:0 3% 3%;
+}
+ article h2{
+     padding:2.5% 3%;
+}
+ aside {
+     width: 60%;
+     padding: 0;
+     width: 28%;
+     height: 455px;
+     text-align: center;
+}
+ aside,article,section{
+     margin: 0 2% 2% 2%;
+     float: left;
+     background-color: white;
+     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 3px 4px rgba(0, 0, 0, 0.12);
+    /*Aside , article and section grouped together since they share styles*/
+}
+ aside h2 {
+     padding: 4% 2%;
+}
+ aside p{
+     padding:0 5%;
+}
+ footer {
+     clear:both;
+     background: linear-gradient(133deg, rgba(101, 74, 213, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /*Applies same gradient as header to keep sense of continuity */
+     color: white;
+     text-align: center;
+     padding: 5px;
+    
+}
+ img {
+     width: 100%;
+     height:auto;
+}
+ table {
+     margin: auto;
+     width: 96%;
+     margin: 0 2% 2%;
+     font-size: 1em;
+     border-collapse: collapse;
+    /*Collapses the borders of the tables so that rather than giving each element of the table its own border , rather the entire table shares the same border*/
+}
+ th, td {
+     border: 3px solid #DCDCDC;
+     padding: 10px;
+}
+ section {
+     width: 96%;
+     height: auto;
+}
+ .bigcol{
+     text-align: center;
+    /* Centers the text for the two larger columns */
+}
+ #wrapper article{
+    /* Used to style the elements on the PDSA page slightly differently*/
+     float:none;
+     width:65%;
+     margin:2% auto;
+     font-size:1.125em;
+}
+ @media (max-width:1024px) {
+    /*Laptop & Tablet Sizing */
+     main{
+         width:95%;
+        /*Widening the main view for smaller screens , elimiating redundent white space*/
+    }
+     li{
+         padding:0 1.5%;
+        /*Makes the navigation more readable at a smaller size */
+    }
+}
+ @media (max-width:780px) {
+    /*Mobile Sizing*/
+     main {
+         margin:5% auto;
+        /*Redices the margin of the main container to the html body giving more space for content */
+    }
+     article,section,aside {
+         width: auto;
+         margin: 2% 1%;
+         height: auto;
+         color: black;
+        /*Article section and aside all share the same values so are group together making them fill as much of the screen as they can*/
+    }
+     header {
+         text-align: center;
+    }
+     table, section {
+         width:98%;
+    }
+     section{
+         padding-bottom:2%;
+    }
+     table{
+         padding:2% 1%;
+         margin:2% auto;
+    }
+     td,tr{
+         padding:0;
+    }
+     ul li {
+         display: block;
+         padding:2%;
+         border: 1px solid rgba(255,255,255,0.1);
+        /*The naviation becomes horizontal to accomodate for a smaller screensize aswell as making the elements easy to access with less accuracy */
+    }
+     p,table{
+         font-size: 0.8em;
+         line-height: normal;
+    }
+     h2{
+         font-size: 1.2em;
+    }
+     #wrapper article{
+         width:95%;
+         margin:3% auto;
+    }
+}
+ 

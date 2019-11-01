@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- The above line lets screen readers and other such devices know that the page is both written in english and the text will be from left to right -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport tag allows the width and scaling of the webpage to be set to allow for responsive design with media queries in the CSS, the content is set to device-width which is the width of the screen on the current device set to 100% width and the initial scale sets the zoom level when visiting the website -->
+    <meta charset="utf-8">
+    <!-- This lets the browser know that the page is being encoded in the standard UTF-8 format -->
+    <meta name="author" content="Daniel McAdam">
+    <meta name="Description" content="This page of the site discusses the first two of my units , including a layout of the course and how im feeling, this page contains Introduction to Web Design and Development along with Information Systems units">
+    <!-- The author and description tag my also provide use to screenreaders as knowing what the page is about before continuing may be of use which changes for each page -->
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico" alt="Site icon consisting of dark to lightblue gradient">
+    <!-- The favicon is what provides the small icon at the top of the tab or icon in the bookmark page , its style is replicated from the gradient used below to give a sense of continuity -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This links  the stylesheet holding all the css for the page to the html -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CPacifico%7CNiramit" rel="stylesheet">
+    <!-- this stylesheet contains the data for the fonts being used on this document , gathered from Google Fonts , in the css i've given fallback options incase they are unable to be retrieved -->
+
+    <title>ePortfolio • Course Overview Part 1</title>
+    <!-- A meaningful title is used to help those with accessibility needs to know whats on this current page -->
+</head>
+
+<body>
+    <header>
+        <h1>Daniel McAdam ePortfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="AboutMe.html" title="About Me Page">About Me</a></li>
+            <li><a class="current" href="CourseOverviewPart1.html" title="Intro to Web Design & Development and Info Systems overview">Course Overview</a></li>
+            <li><a href="CourseOverviewPart2.html" title="Programming and Computer System Fundamentals overview">Continued Overview</a></li>
+            <li><a href="PDSA.html" title="Personal Development Self Assessment">Self Assessment</a></li>
+            <!-- The current class is applied to the page the user is currently visiting to help make the site easier to navigate since they know where they currently are -->
+            <!-- Titles are added to all links to ensure that those using screen readers know the contents of the link or where it will take them -->
+        </ul>
+        <!-- an unordered list is used to hold the navigation of my site-->
+    </nav>
+    <main>
+        <article>
+            <h2>Introduction to Web Design &amp; Development</h2>
+            <!-- the &amp; character code is used instead of a & since some characters such as ampersand are used with special meaning aswell as inputting characeters not on the keyboard -->
+            <p>
+                The Web Design and Development course as expected, focuses on the Web side of computer science and programming in particular, since the web was developed in the late 80's and early 90's it has taken off to become one of the most successful mediums of communication in human history allowing communication, cameras and more to take place at ones home proving a great benefit to the economy. This popularity is largely why I personally believe web development is and should be a large part of programming in todays climate.
+            </p>
+            <p>
+                In the first term of the unit we are to use client side technologies to structure and present web pages, and to make them interactive. Which will allow me to be able to produce highly-readable, best-practice client-side code that is event- and object-driven, and runs on multiple browsers and platforms; as well as applying web design usability principles to my web production. Through the lectures and lab sheets available on modules as well as online tutorials such as the ones available on <a href="http://www.linda.com" title="linda.com website">linda.com</a> and other such reputable resources. In the first six weeks I will learn the basic building blocks of the web - HTML5 and CSS - and produce my own website using the HTML5 (as seen here). The Assignment 1CWK25 will assess the learning outcomes. In the final five weeks I am learning the fundamentals of writing readable front-end event-driven JavaScript, with a focus on the HTML5 video API. The Assignment 2CWK25 will assess these learning outcomes.
+            </p>
+            <p>
+                So far in this unit I have learned the how to make use of the modern industry standard HTML syntax for web development as opposed to relying on the use of div tags and id's to structure content along with making better use of child selectors in cs's to organise my styling of content. Coming from a background of small scale web development in college and high school along with the odd personal project, ive found it very helpful to learn the correct structured way of creating markup as opposed to relying on what are outdated methods of structure I previously used.
+            </p>
+
+        </article>
+        <aside>
+            <img src="images/markup.png" alt="Screenshot of About Me page markup">
+            <h2>Pictured: "About Me" page markup</h2>
+        </aside>
+        <article>
+            <h2>Information Systems</h2>
+            <!-- there is a hierarchy of headers used with the main header using the h1 tag and all subsequent sub headers use the h2 tag -->
+            <p> As stated in the first lecture, Information Systems is The study of complimentary networks of hardware, software, people and organisations that collect, filter, process, create and distribute data in order to produce high quality information. In term 1 this unit looks at Organisations, Systems Analysis and Design, and IS in Organisations. Here a group project will be started that lasts all year by using <a href="http://www.piazza.com" title="Piazza website">Piazza</a> to manage group work. The first part of the project involves analysing a real world scenario and designing a system to deal with it. term 2 will cover databases and SQL (using ORACLE), and the project you implement the design produced in term 1.
+            </p>
+            <p>
+                Lectures and labs will be tightly connected to the project: you will learn a technique and then, in the next session, practice it. You'll then employ that technique in the next section of your team project during the next couple of weeks. All the way through you'll learn about the various significant IS that are used in organisations, as well as some social issues surrounding the use of IS. I will also work on  report writing and presentation skills, upon which will be assessed.
+            </p>
+            <p>
+                So far up to this portfolio's completion the unit has covered: The Business Environment and Organisations, The Systems Development Lifecycle, Management Information and Decision Making, Use Cases and Use Case Diagrams, Data Modelling and Entity Relationship Diagrams and Relational Data Analysis (RDA). Having completed the first part of the group assignment I feel very confident with this unit by having a lot of time left to review the work before its submission thanks to my time management and group coordination.
+            </p>
+
+        </article>
+
+        <aside>
+            <img src="images/erd.jpg" alt="Database Entity Relationship Diagram">
+            <h2> Pictured: ERD Diagram</h2>
+        </aside>
+
+    </main>
+    <footer>
+        <p>&#169; Daniel McAdam 2018 • <a href="https://github.com/Daniel-McAdam">click here to email</a></p>
+        <!-- the footer makes use of the copyright hex code in html to display the character that may not be available on a keyboard, there is also an email link with a screenreader friendly link to email me -->
+    </footer>
+
+</body>
+
+</html>

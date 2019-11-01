@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- The above line lets screen readers and other such devices know that the page is both written in english and the text will be from left to right -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport tag allows the width and scaling of the webpage to be set to allow for responsive design with media queries in the CSS, the content is set to device-width which is the width of the screen on the current device set to 100% width and the initial scale sets the zoom level when visiting the website -->
+    <meta charset="utf-8">
+    <!-- This lets the browser know that the page is being encoded in the standard UTF-8 format -->
+    <meta name="author" content="Daniel McAdam">
+    <meta name="Description" content="This website is an e-Porfolio showcasing myself and my personal achievements aswell as my time at University">
+    <!-- The author and description tag my also provide use to screenreaders as knowing what the page is about before continuing may be of use which changes for each page -->
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico" alt="Site icon consisting of dark to lightblue gradient">
+    <!-- The favicon is what provides the small icon at the top of the tab or icon in the bookmark page , its style is replicated from the gradient used below to give a sense of continuity -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This links  the stylesheet holding all the css for the page to the html -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CPacifico%7CNiramit" rel="stylesheet">
+    <!-- this stylesheet contains the data for the fonts being used on this document , gathered from Google Fonts , in the css i've given fallback options incase they are unable to be retrieved -->
+
+    <title>ePortfolio • About Me</title>
+    <!-- A meaningful title is used to help those with accessibility needs to know whats on this current page -->
+</head>
+
+<body>
+    <header>
+        <h1>Daniel McAdam ePortfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="current" href="AboutMe.html" title="About Me Page">About Me</a></li>
+            <!-- The current class is applied to the page the user is currently visiting to help make the site easier to navigate since they know where they currently are -->
+            <!-- Titles are added to all links to ensure that those using screen readers know the contents of the link or where it will take them -->
+            <li><a href="CourseOverviewPart1.html" title="Intro to Web Design & Development and Info Systems overview">Course Overview</a></li>
+            <li><a href="CourseOverviewPart2.html" title="Programming and Computer System Fundamentals overview">Continued Overview</a></li>
+            <li><a href="PDSA.html" title="Personal Development Self Assessment">Self Assessment</a></li>
+        </ul>
+        <!-- an unordered list is used to hold the navigation of my site-->
+    </nav>
+    <main>
+
+
+        <article>
+            <h2> Hello There</h2>
+            <!-- there is a hierarchy of headers used with the main header using the h1 tag and all subsequent sub headers use the h2 tag -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut erat egestas ipsum malesuada blandit non non odio. Nam tortor leo, fermentum eu bibendum eget, sodales quis metus. Integer suscipit cursus ex, eget ornare felis feugiat ullamcorper. Phasellus et tellus eget tellus scelerisque suscipit non nec diam. Etiam fermentum maximus rutrum. Nunc nibh magna, convallis in bibendum id, consequat eget mauris. Donec efficitur placerat finibus. Curabitur magna velit, faucibus ut risus non, maximus lobortis odio. Nam cursus posuere leo scelerisque consectetur. Sed neque felis, aliquam vel rutrum sed, molestie in sapien. Sed eu ligula vel augue iaculis egestas in sit amet leo. Maecenas vel vulputate nibh, faucibus tincidunt tellus. Sed luctus dui id nisi ultricies, nec tempor quam ultricies. In hac habitasse platea dictumst. Nunc semper orci dui, id malesuada est pellentesque et. Integer sollicitudin augue ac leo facilisis, porttitor facilisis nisl ullamcorper. Curabitur dictum nunc in mi convallis elementum. Etiam posuere lacus lacinia, convallis nulla vitae, vulputate urna. Nulla interdum vitae neque vitae convallis. Ut vel purus et orci sodales hendrerit nec non leo. Fusce gravida eget est vitae aliquam. Aenean venenatis volutpat enim, nec lobortis magna rhoncus a. Cras quis cursus justo, a elementum felis. Phasellus non orci vitae metus varius venenatis a vel nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac lectus at ante convallis tempor pharetra vitae lorem. In ornare est dui, nec tempus odio fringilla sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+
+        </article>
+
+
+        <aside>
+            <img src="images/manchester.jpg" alt="Manchester Town Centre">
+            <h2>Pictured: Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut erat egestas ipsum malesuada blandit non<i>"Lorem ipsum"</i> or <i>"Lorem ipsum"</i> Nunc semper orci dui</p>
+            <!-- Italic tags used to differenciate parts of the information -->
+        </aside>
+        <!-- the aside tags are used to hold images at the side of a page , they include space for a short description of what pictured along with an alt tag for those who may be visually impared -->
+
+        <section>
+            <h2>My Achievements</h2>
+            <table>
+
+                <tr>
+                    <th>GCSE</th>
+                    <th>Grade Achieved</th>
+                    <th>A-Level</th>
+                    <th>Grade Achieved</th>
+                </tr>
+                <tr>
+                    <td>Computer Science</td>
+                    <td rowspan=6 class="bigcol">Grades A to C</td>
+                    <!-- i have given this table data cell the rowspan 6 property , this makes it take up the whole row since its 6 cells tall allowing the table to be simplified so that the same result can be showed for each subject improving readability and accessibilty -->
+                    <!-- The bigcol class is used to centre the text in the two grade data cells, i was unable to use a child selector for this since im using many other td tags in the table -->
+                    <td rowspan=2>Graphic Communication</td>
+                    <td rowspan=6 class="bigcol">Grades A to C</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td rowspan="2">Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Information Technology</td>
+                    <td rowspan="2">Economics</td>
+                </tr>
+                <tr>
+                    <td>Business Studies</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&#169; Daniel McAdam 2018 • <a href="https://github.com/Daniel-McAdam">click here</a> to email me</p>
+        <!-- the footer makes use of the copyright hex code in html to display the character that may not be available on a keyboard, there is also an email link with a screenreader friendly link to email me -->
+    </footer>
+
+</body>
+
+</html>

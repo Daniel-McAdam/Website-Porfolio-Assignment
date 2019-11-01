@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- The above line lets screen readers and other such devices know that the page is both written in english and the text will be from left to right -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport tag allows the width and scaling of the webpage to be set to allow for responsive design with media queries in the CSS, the content is set to device-width which is the width of the screen on the current device set to 100% width and the initial scale sets the zoom level when visiting the website -->
+    <meta charset="utf-8">
+    <!-- This lets the browser know that the page is being encoded in the standard UTF-8 format -->
+    <meta name="author" content="Daniel McAdam">
+    <meta name="Description" content="This page of the site discusses the last two of my units , including a layout of the course and how im feeling, this page contains Computer System Fundamentals and Programming units">
+    <!-- The author and description tag my also provide use to screenreaders as knowing what the page is about before continuing may be of use which changes for each page -->
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico" alt="Site icon consisting of dark to lightblue gradient">
+    <!-- The favicon is what provides the small icon at the top of the tab or icon in the bookmark page , its style is replicated from the gradient used below to give a sense of continuity -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This links  the stylesheet holding all the css for the page to the html -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CPacifico%7CNiramit" rel="stylesheet">
+    <!-- this stylesheet contains the data for the fonts being used on this document , gathered from Google Fonts , in the css i've given fallback options incase they are unable to be retrieved -->
+
+    <title>ePortfolio • Course Overview Part 2</title>
+    <!-- A meaningful title is used to help those with accessibility needs to know whats on this current page -->
+</head>
+
+<body>
+    <header>
+        <h1>Daniel McAdam ePortfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="AboutMe.html" title="About Me Page">About Me</a></li>
+            <li><a href="CourseOverviewPart1.html" title="Intro to Web Design & Development and Info Systems overview">Course Overview</a></li>
+            <li><a class="current" href="CourseOverviewPart2.html" title="Programming and Computer System Fundamentals overview">Continued Overview</a></li>
+            <li><a href="PDSA.html" title="Personal Development Self Assessment">Self Assessment</a></li>
+            <!-- The current class is applied to the page the user is currently visiting to help make the site easier to navigate since they know where they currently are -->
+            <!-- Titles are added to all links to ensure that those using screen readers know the contents of the link or where it will take them -->
+        </ul>
+        <!-- an unordered list is used to hold the navigation of my site-->
+    </nav>
+    <main>
+        <article>
+            <h2>Computer System Fundamentals</h2>
+            <!-- there is a hierarchy of headers used with the main header using the h1 tag and all subsequent sub headers use the h2 tag -->
+            <p>
+                CSF is split into two parts, The first is a logical based unit that focuses on binary logic gates and boolean expressions along with Karnaugh maps via the use of the <a href="http://www.cburch.com/logisim/" title="Logisim website"> Logisim </a> digital logic circuit simulator software that allows such circuits to be tested on a PC or MAC. Lectures will discuss: Components of a CPU. Processor Model. Fetch execute cycle. hardware interrupts. Assembly Language Programming: Relationship between high level Languages and Assembler. Instruction sets. Registers.
+            </p>
+            <p>
+                The second part of the unit focuses on discrete mathematics and how it's tied into computer science featuring topics such as Matrices as linear transforms. Functions: definition, properties. Sets: subsets, set algebra, Logic: Propositions, Predicates, propositional algebra, proof of simple results.
+            </p>
+            <p>
+                In this unit I have been able to extend my previous knowledge of binary logic gates and boolean expressions by taking advantage of the Logisim software in both lab sessions and my own free time in order to understand how advanced circuits can be created via a combination of gates such as AND, OR, NOT and XOR being fed an input and being able to display an output visual often through a visual effect such as a digital led changing from red to green. I made sure to prepare for the test that took place regarding boolean logic and binary gates thanks to this software which also contains a feature called combinational analysis that allows the user to enter in truth tables from a set of inputs and outputs and let logisim create and build the circuit without me having to place the individual gates, this feature was invaluable during my exam.
+            </p>
+        </article>
+        <aside>
+            <img src="images/logisim-decoder.png" alt="Screenshot of Logisim decoder ciruit">
+            <h2>Pictured: Logisim Decoder Circuit</h2>
+        </aside>
+        <!-- the aside tags are used to hold images at the side of a page , they include space for a short description of what pictured along with an alt tag for those who may be visually impared -->
+        <article>
+            <h2>Programming</h2>
+
+            <p> Learning to program is the most important aspect of the degree as it underpins many of the later units you will cover and introduces a new way of thinking logically, solving problems and troubleshooting errors. This unit introduces computer programming in a high level programming language Java and includes principles and practice in problem solving, program design, solution implementation and testing. These skills can only be acquired by practice and perseverance.
+            </p>
+            <p>
+                The aims of the unit will be to develop a simple vocabulary of commands,syntax and programming constructs using <a href="https://www.processing.org" title="Processing website">Processing</a> (graphical Java, simple development environment). Developing problem solving skills, moving to console applications (with a more professional Java development environment) refining and building on knowledge of programming constructs On successful completion of this unit I'll be able to apply the main structuring features of the chosen high level programming language(s) to solve a variety of problems. Design well-structured solutions to a problem of varying complexity using appropriate methods. Implement well-structured solutions to a variety of problems using the appropriate techniques and a high-level programming language. Apply object oriented design to model a variety of real world (type) problems construct and apply suitable software tests.
+            </p>
+            <p>
+                Having taken computer science at both GCSE and A-Level, I have a background with programming which means I feel very at home with this module of the course, however I'm new to Java so the experience is fresh, ive been taking advantage of online programming sites like <a href="http://www.codingbat.com" title="Coding bats website">Codingbat</a> which offer many different types of exercises ranging from logic to recursion that are all based on Java, allowing me to both practice my abilities as well as my knowledge of Java syntax.
+            </p>
+
+        </article>
+
+        <aside>
+            <img src="images/processingcode.PNG" alt="Processing code example">
+            <h2> Pictured: Processing Code Example</h2>
+        </aside>
+
+    </main>
+    <footer>
+        <p>&#169; Daniel McAdam 2018 • <a href="https://github.com/Daniel-McAdam">click here to email</a></p>
+        <!-- the footer makes use of the copyright hex code in html to display the character that may not be available on a keyboard, there is also an email link with a screenreader friendly link to email me -->
+    </footer>
+
+</body>
+
+</html>
