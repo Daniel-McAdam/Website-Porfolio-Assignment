@@ -3,17 +3,17 @@ This was a small website written in static HTML/CSS for a first year assignment 
 
 ### Desktop View
 <p align="center">
-  <img src="images/" align="center">
+  <img src="images/PortfolioDesktop.gif" align="center">
 </p>
 
 
 ### Tablet View
 <p align="center">
-  <img src="images/" align="center">
+  <img src="images/PortfolioTablet.gif" align="center">
 </p>
 
 
 ### Mobile View
 <p align="center">
-  <img src="images/" align="center">
+  <img src="images/PortfolioMobile.gif" align="center">
 </p>
